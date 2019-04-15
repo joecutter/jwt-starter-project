@@ -1,0 +1,10 @@
+schema  {
+    query: Query
+}
+type Query{
+    account(addresses:String,blockNumber: Int): Account
+}
+type Account {
+    publicKey: String
+    balance: Int
+}
